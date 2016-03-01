@@ -10,7 +10,7 @@ def foo(a,b):
 
 
 def main():
-    res = foo(2, "sss")
+    res = foo(2, 6)
     print res
 
 if __name__ == '__main__':
