@@ -2,9 +2,10 @@ from types import IntType, LongType, FloatType
 
 
 def foo(a,b):
-    if not (type(a) in (IntType, LongType, FloatType)) or not (type(b) in (IntType, LongType, FloatType)):
+    my_types_tup = (IntType, LongType, FloatType)
+    if not (type(a) in my_types_tup) or not (type(b) in my_types_tup):
         return False
-    elif (type(a) in (IntType, LongType, FloatType)) and (type(b) in (IntType, LongType, FloatType)):
+    elif (type(a) in my_types_tup) and (type(b) in my_types_tup):
         return (a % b) + (b % a)
 
 
