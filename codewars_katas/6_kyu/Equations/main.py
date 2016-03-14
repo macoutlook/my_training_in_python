@@ -1,16 +1,13 @@
 import math
-import math
 def solution(n, m):
     result = 0
-    max_sqrt = max([math.sqrt(n), math.sqrt(m)])
-    for a in range(int(math.ceil(max_sqrt))):
+    for a in range(int(math.ceil(max([math.sqrt(n), math.sqrt(m)]))+1)):
         if (a + ((n-a*a)**2)) == m:
             result+=1
     return result
 
-
 def main():
-    print solution(18,198)
+    print solution(4, 20)
 
 
 
